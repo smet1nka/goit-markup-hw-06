@@ -445,41 +445,51 @@
                 </button>
 
                 <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+
                 <div class="modal-data">
                 <form action="" autocomplete="on">
-                    <div class="form-filed filed"></div>
-                <label for="" class="model-lable">
-                    Ім'я
-                    <input type="text" class="madal-data-item">   
-                </label>
-            </div>
-            <div class="form-filed">
-                <label for="" class="model-lable">
-                    Телефон
-                    <input type="text" class="madal-data-item">   
-                </label>
-            </div>
-            <div class="form-filed">
-                <label for="" class="model-lable">
-                    Пошта
-                    <input type="text" class="madal-data-item">
-                </label>
-            </div>
-                
-                <div class="form-filed">
-                <label for="" class="model-lable">
-                    Коментар
-                    <input type="text" class="madal-data-comment" placeholder="Введіть текст">   
-                </label>
-            </div>
+                    <div class="form-field">
+                        <span class="form-item">Ім'я</span>
+                        <label  class="form-label">
+                        <input type="text" class="form-input" name="name">
+                            <svg class="form-icon" width="18px" height="18px">
+                                <use href="./images/icons.svg#icon-person"></use>
+                            </svg>
+                        </label>
+                    </div>
+                    
+                    <div class="form-field">
+                        <span class="form-item">Телефон</span>
+                        <label  class="form-label">
+                        <input type="text" class="form-input" name="phone">
+                            <svg class="form-icon" width="18px" height="18px">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                            </svg>
+                        </label>
+                    </div>
+
+                    <div class="form-field">
+                        <span class="form-item">Пошта</span>
+                        <label  class="form-label">
+                        <input type="text" class="form-input" name="E-mail">
+                            <svg class="form-icon" width="18px" height="18px">
+                                <use href="./images/icons.svg#icon-email"></use>
+                            </svg>
+                        </label>
+                    </div>
+
+                    <div class="form-field">
+                        <span class="form-item">Коментар</span>
+                        <label  class="form-label">
+                        <textarea name="feedback" class="textarea" rows="6"  placeholder="Введіть текст" required ></textarea>
+                        </label>
+                    </div>
             <div class="contract">
             <label for="" class="contract-label">
-                <input  class="form-checkbox visually-hidden" type="checkbox" value="" >
-                <svg class="form-checkbox-icon" width="16px" height="15px">
-                    <use href="./images/icons.svg#icon-uncheck" class="unchecked"> </use>
-                    <use href="./images/icons.svg#icon-check" class="checked"> </use>
-                </svg>
+                <input type="checkbox" name="agreement-checkbox" class="form-checkbox" required >
+                <span class="form-agreeement-text">
                 Погоджуюся з розсилкою та приймаю <a href="#" class="terms-contract" >Умови договору</a>
+            </span>
             </label>
             <button class="madal-button" type="submit">Відправити</button>
             </div>
