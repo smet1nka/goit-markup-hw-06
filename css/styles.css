@@ -1060,16 +1060,10 @@ margin-bottom: 50px;
 
 }
 
-.form-icon, .form-input:hover,
- .form-icon, .form-input:focus{
-    border-color: #2196F3;
-    color: #2196F3;  
+.form-input:focus + svg {
+    fill: var(--second-color);
 }
 
-
-.form-icon{
-fill: #212121;
-}
 
 
 
