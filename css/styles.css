@@ -582,7 +582,6 @@ margin-bottom: 50px;
 
 
 
-
 /*footer*/
 .footer {
             background: #2F303A;
@@ -735,7 +734,7 @@ margin-bottom: 50px;
     margin-left: 93px;
 }
 
-.mailing-list{
+.mailing-list-footer{
     
     display: flex;
 }
@@ -972,7 +971,7 @@ margin-bottom: 50px;
     
 }
 .modal{
-    margin-top: 50px;
+    padding:40px 40px 40px 40px ;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1002,7 +1001,22 @@ margin-bottom: 50px;
             transition-duration: 250ms ;
             transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
+.icon-close{
+    transition: fill;
+    transition-duration: 250ms ;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+}
 
+
+.icon-close:focus,
+.close-btn:hover{
+    color: #2196F3;
+
+
+}
+.icon-close{
+    fill: currentColor;
+}
 
 .form-item{
     display: block;
@@ -1046,8 +1060,22 @@ margin-bottom: 50px;
 
 }
 
+.form-icon, .form-input:hover,
+ .form-icon, .form-input:focus{
+    border-color: #2196F3;
+    color: #2196F3;  
+}
+
+
+.form-icon{
+fill: #212121;
+}
+
+
+
 .textarea{
     width: 448px;
+    height: 120px;
     resize: none;
 
     padding-top: 12px;
@@ -1063,26 +1091,14 @@ margin-bottom: 50px;
             line-height: 23px;
             text-align: center;
             letter-spacing: 0.03em;
-            margin-top: 40px;
+            
 
             color: #212121;
 }
-.icon-close{
-    transition: fill;
-    transition-duration: 250ms ;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
-}
 
-
-.icon-close:hover,
-.icon-close:focus{
-    fill: #2196F3;
-
-
-}
 
 .form-field{
-    margin-left: 40px;
+    
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
@@ -1090,24 +1106,6 @@ margin-bottom: 50px;
 }
 
 
-
-.form-icon:hover{
-    fill: #2196F3;
-
-
-
-}
-
-
-
-.form-input:hover,
-.form-input:focus{
-    border-color: #2196F3;
-    fill: #2196F3;
-   
-
-    
-}
 
 
 .form-massege{
@@ -1139,7 +1137,6 @@ margin-bottom: 50px;
     height: 40px;
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
     margin-top: 4px;
     
     
@@ -1156,7 +1153,7 @@ margin-bottom: 50px;
     height: 120px;
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
+    
 
     font-weight: 400;
     font-size: 12px;
@@ -1182,7 +1179,9 @@ margin-bottom: 50px;
 }
 
 .contract-label {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -1249,7 +1248,7 @@ margin-bottom: 50px;
     
    
     margin-top: 30px;
-    margin-bottom: 40px;
+    
     text-align: center;
 
     border: none;
