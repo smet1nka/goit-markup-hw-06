@@ -997,12 +997,11 @@ margin-bottom: 50px;
             background-color: #FFFFFF;
             border-radius: 50%;
             border: 1px solid rgba(0, 0, 0, 0.1);
-            transition-property: background-color;
-            transition-duration: 250ms ;
-            transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+
+            
 }
-.icon-close{
-    transition: fill;
+.icon-close, .close-btn{
+    transition: color, fill;
     transition-duration: 250ms ;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
@@ -1059,12 +1058,33 @@ margin-bottom: 50px;
 
 
 }
-
+/*
 .form-input:focus + svg {
     fill: var(--second-color);
 }
+*/
 
+.form-label{
+    display: block;
+}
 
+.form-label:hover .modal-lable-hover{
+    outline:  transparent;
+    border-color: var(--second-color);
+    fill: var(--second-color);
+}
+
+.form-label .modal-lable-hover:focus{
+    outline:  transparent;
+    border-color: #2196F3;
+    
+}
+.modal-lable-hover{
+    transition: fill, border-color;
+    transition-duration: 250ms ;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+
+}
 
 
 .textarea{
